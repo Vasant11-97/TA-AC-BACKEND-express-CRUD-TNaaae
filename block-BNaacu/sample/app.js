@@ -57,7 +57,7 @@ app.get('/students/:id', (req, res, next) => {
   var id = req.body.id;
   Student.find({ name: id }, (err, students) => {
     console.log(err, students);
-    var name = { name: students.name };
+    var name = { name: students.name, email: `${id}@gmail.com` };
     res.render('studentsDetails', { name: name });
   });
 });
