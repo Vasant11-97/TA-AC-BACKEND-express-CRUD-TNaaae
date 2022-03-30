@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheet/style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav class="header">
+        <a href="/">UserPage</a>
+        <a href="/user">Show User</a>
+        <a href="">
+          <button>Add User</button>
+        </a>
+      </nav>
+    </header>
+    <fieldset class="form">
+      <form action="/user/new" method="post">
+        <input type="text" name="name" placeholder="Enter your name" />
+        <input type="number" name="age" id="" placeholder="Enter age" />
+        <input type="email" name="email" id="" placeholder="Your Email" />
+        <input type="text" name="bio" placeholder="Your Bio" />
+        <div class="submit">
+          <input type="submit" value="Add User" />
+        </div>
+      </form>
+    </fieldset>
+  </body>
+</html>
